@@ -15,6 +15,7 @@ jobs:
       - name: Run tests
         run: npm test
   deploy-space-rainbows:
+    needs: test-boogally-boo
     runs-on: ubuntu-latest
     steps:
       - name: Get code
